@@ -1,0 +1,15 @@
+const notas = [10, 6, 8];
+
+notas.push( 7 );
+
+let media = 0;
+
+for (let index = 0; index < notas.length; index++) {
+    media += notas[index];
+} 
+
+media /= notas.length;
+//media = media / notas.length;
+
+console.log( media );
+
