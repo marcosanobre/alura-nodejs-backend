@@ -107,3 +107,4 @@ as informações atualizadas, sem a avaliação, são exibidas corretamente.
 
 delete livro.avaliacao;
 console.log( livro, '\n\n' );
+
