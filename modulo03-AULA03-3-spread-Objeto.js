@@ -7,22 +7,19 @@ const estudante = {
     hobbies: ['Caminhada', 'Mergulho', 'Tenis'],
     cpf: '333.333.333-99',
     telefones: ['+55 (61) 988887722', '+55 (81) 997978181'],
-    endereco: [
+    enderecos: [
         { rua:'Rua dos Zumbis', cidade: 'Sao Paulo', estado: 'Sao Paulo' },
         { rua:'Alameda Zumbi Loko', cidade: 'Maranguape', estado: 'Ceará' }
     ]
 };
 
-/* 
-for (const chave in estudante) {
-    console.log( chave, estudante[chave] );
+// Montar um OBJETO com partes de outro
+const dadosEnvio = {
+    destinatario: estudante.nome,
+    ...estudante.enderecos[0],
+    cep: '90.111-222'
 };
-*/
 
-for (const chave in estudante) {
-    const tipo = typeof estudante[chave];
-    if (tipo !== 'object' && tipo !== 'function') {
-        console.log( chave, estudante[chave] );        
-    }
-};
+console.log( dadosEnvio );
+
 
