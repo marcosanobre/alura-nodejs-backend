@@ -1,0 +1,14 @@
+
+{
+    "nome": "Ana",
+    "idade": 35,
+    "cpf": "32913984969",
+    "email": "ana@email.com",
+    "telefones": ["551191234567","556698765432"],
+    "endereco": {
+    "rua": "Rua Joseph Climber",
+    "numero": "45",
+    "complemento": "Apto 43"
+    }
+}
+
